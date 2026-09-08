@@ -47,7 +47,10 @@ Defines hierarchical roles with integer clearance tiers. Approvals from higher l
 team_hierarchy:
   devops-maintainers: 1
   maintainers: 2
-  tech-council: 3
+  shopping-tech-council: 3
+  food-tech-council: 3
+  lodging-tech-council: 3
+  payments-tech-council: 3
   governance-council: 4
 ```
 
@@ -79,7 +82,7 @@ rules:
     patterns:
       - "source/**"
     requires:
-      - min_team: "tech-council"
+      - min_team: "shopping-tech-council"
         min_approvals: 1
 ```
 

@@ -20,8 +20,8 @@ rules:
     patterns:
       - "tc/**"
     requires:
-      # Grants access to tech-council (L3) and governance-council (L4)
-      - min_team: "tech-council"
+      # Grants access to Tech Councils (L3) and governance-council (L4)
+      - min_team: "shopping-tech-council"
         min_approvals: 1
 
   # ---------------------------------------------------------
@@ -48,7 +48,7 @@ rules:
       - "CONTRIBUTING.md"
       - "SECURITY.md"
     requires:
-      # Grants access to devops (L1), maintainers (L2), tech-council (L3),
+      # Grants access to devops (L1), maintainers (L2), tech councils (L3),
       # and governance-council (L4)
       - min_team: "devops-maintainers"
         min_approvals: 1
@@ -66,5 +66,8 @@ proxy_reviewers:
 team_hierarchy:
   devops-maintainers: 1
   maintainers: 2
-  tech-council: 3
+  shopping-tech-council: 3
+  food-tech-council: 3
+  lodging-tech-council: 3
+  payments-tech-council: 3
   governance-council: 4
